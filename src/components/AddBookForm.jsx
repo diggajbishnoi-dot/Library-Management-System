@@ -5,7 +5,7 @@ const [title,setTitle] = useState("");
 const [author,setAuthor] = useState("");
 
 function handleSubmit(){
-    if(title ==""|| author==""){
+    if(title ===""|| author===""){
         alert("Please fill all fields");
         return;
     }

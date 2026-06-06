@@ -5,8 +5,9 @@ import AddBookForm from '../components/AddBookForm'
 
 function Catalog()
  {
-    
-    
+    useEffect(() => {
+   console.log("Catalog Loaded");
+}, []);
     
     const [books, setBooks] = useState([
   {
@@ -42,17 +43,11 @@ function toggleStatus(title){
     });
     setBooks(updatedBooks);
 }
-   const filteredBooks = books.filter((book) => book.title.toLowerCase().includes(search.toLocaleLowerCase())
+   const filteredBooks = books.filter((book) => book.title.toLowerCase().includes(search.toLowerCase())
 );
 
 const [loading,setLoading] = useState(true);
 
-setTimeout(() => {
-    setLoading(false);
-}, 3000);
-if(loading){
-            return <h2>Loading Books...</h2>
-        }
 
   return (
     <div className="catalog">
