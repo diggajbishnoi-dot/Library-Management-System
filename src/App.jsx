@@ -1,12 +1,15 @@
-import Catalog from './pages/Catalog'
-import "./styles/style.css";
-function App() {
- 
+
+ffunction App() {
   return (
-    <div>
-      <Catalog/>
-            </div>
+    <div style={{
+      background: "red",
+      color: "white",
+      fontSize: "50px",
+      padding: "50px"
+    }}>
+      HELLO TEST
+    </div>
   );
 }
 
-export default App
+export default App;
