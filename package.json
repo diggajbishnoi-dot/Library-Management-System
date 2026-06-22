@@ -3,6 +3,7 @@
   "name": "library-management",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://diggajbishnoi-dot.github.io/Library-Management-System",
   "type": "module",
   "scripts": {
   "dev": "vite",
